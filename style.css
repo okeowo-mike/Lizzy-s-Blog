@@ -22,7 +22,7 @@ a:hover {
 }
 
 .purple-ink {
-  color: blueviolet;
+  color: #8a2be2
 }
 
 li {
@@ -518,14 +518,18 @@ nav ul li a {
     display: none;
   }
 
+  #text-header {
+    width: 100%;
+  }
+
   .intro-text {
     margin: auto;
+    width: 100vw;
     padding-top: 5rem;
-    /* position: ; */
-    bottom: 20%;
+    /* position:; */
+    bottom: 15%;
     padding-left: 1rem;
     padding-right: 1rem;
-    width: 100%;
     text-align: center;
   }
   .h1-text {
@@ -533,6 +537,7 @@ nav ul li a {
   }
   .header-sub-text {
     width: 350px;
+    margin: auto;
     margin-top: 1rem;
     font-size: 1.5rem;
     text-align: center;
@@ -744,22 +749,28 @@ nav ul li a {
     /* backdrop-filter: blur(6rem); */
     flex-direction: column;
     height: 60vh;
+    width: 100%;
     padding: min(30vh, 5rem) 2em;
-    padding-right: 11rem;
+    padding-right: 7rem;
     margin-top: 0.2rem;
     transform: translateX(100%);
     transition: transform 450ms ease-out;
     z-index: 1000;
   }
   .primary-navigation li a {
-    color: rgb(250, 142, 18);
+    color: blueviolet;
     font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .primary-navigation li {
+    margin-bottom: 2rem;
   }
 
   .mobile-nav-toggle {
     display: block;
     position: absolute;
-    background: url(./braves_princess_merida-1920x1080.jpg) no-repeat center
+    background: url(./open.png) no-repeat center
       center/cover;
     background-repeat: no-repeat;
     border: 0;
@@ -770,7 +781,7 @@ nav ul li a {
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
-    background: url(./braves_princess_merida-1920x1080.jpg) no-repeat center
+    background: url(./close.png) no-repeat center
       center/cover;
   }
 
@@ -874,57 +885,54 @@ nav ul li a {
   }
 
   /* food post page sectionnnn ////////////////////////////// */
-.post-page-content {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center;
+  .post-page-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
   align-items: center; */
-  margin: auto;
-  width: 97%;
-  border: 1px solid black;
-  margin-top: 4rem;
-  padding: 1rem;
-}
+    margin: auto;
+    width: 97%;
+    border: 1px solid black;
+    margin-top: 4rem;
+    padding: 1rem;
+  }
 
-/* related post section ////////////////////////////////// */
-#related-post {
-  width: 100%;
-  margin: auto;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  /* display: flex;
+  /* related post section ////////////////////////////////// */
+  #related-post {
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; */
-}
+  }
 
-.related-post {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-#related-post h2 {
-  margin: auto;
-  text-align: center;
-}
+  .related-post {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  #related-post h2 {
+    margin: auto;
+    text-align: center;
+  }
 
-.related-image img {
-  width: 100%;
-}
+  .related-image img {
+    width: 100%;
+  }
 
-.related-card {
-  max-width: 250px;
-  border: 1px solid black;
-  /* margin-top: ; */
-}
+  .related-card {
+    max-width: 250px;
+    border: 1px solid black;
+    /* margin-top: ; */
+  }
 
-.related-title {
-  padding: 0.6rem;
-}
-
-
-
+  .related-title {
+    padding: 0.6rem;
+  }
 }
