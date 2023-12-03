@@ -15,6 +15,7 @@ html {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 a:hover {
@@ -23,6 +24,31 @@ a:hover {
 
 .purple-ink {
   color: #8a2be2
+}
+
+.h1t {
+  font-size: 4rem;
+  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  letter-spacing: 2px;
+}
+
+.h2t {
+  font-size: 1.5rem;
+  max-width: 100%;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.h3t {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.pt {
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  font-weight: lighter;
 }
 
 li {
@@ -38,9 +64,8 @@ li {
 }
 
 .small-line {
-  border-bottom: 1.5px solid black;
-  width: 200px;
-  margin-top: 1rem;
+  border-bottom: 0.5px solid black;
+  width: 250px;
   display: flex;
   justify-content: center;
 }
@@ -80,6 +105,12 @@ li {
 .two-pic img {
   height: 400px;
   width: 300px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #picture-header {
@@ -124,13 +155,15 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .intro-text {
   position: absolute;
-  bottom: 40%;
+  bottom: 35%;
   padding-left: 3rem;
 }
+
 
 .header-sub-text {
   width: 550px;
@@ -138,7 +171,7 @@ nav ul li a {
 }
 
 .line {
-  border-bottom: 0.7px solid black;
+  border-bottom: 0.5px solid black;
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -150,9 +183,9 @@ nav ul li a {
   margin-bottom: 3rem;
 }
 #featured-post h2 {
-  padding-bottom: 0.5rem;
-  border-bottom: 0.5px solid black;
-  width: 250px;
+  /* padding-bottom: 0.5rem; */
+  /* border-bottom: 0.5px solid black; */
+  /* width: 100%; */
   margin-left: 3rem;
 }
 .featured-image img {
@@ -210,12 +243,18 @@ nav ul li a {
   padding-bottom: 0.3rem;
 }
 
-.subscribe-btn {
+.subscribe-btn p{
   /* border: 1px solid black; */
   padding: 0.5rem;
   background-color: blueviolet;
   color: aliceblue;
+  font-size: 1.1rem;
 }
+
+.subscribe-btn:hover {
+  background-color: #4b0a88;
+}
+
 
 /* main-content section ////////////////////////////////////// */
 #main-content-area {
@@ -248,8 +287,13 @@ nav ul li a {
   margin-top: 1.5rem;
 }
 
+.recent-image {
+  width: 80rem;
+  height: 300px;
+}
+
 .recent-image img {
-  width: 230px;
+  width: 100%;
   height: 100%;
 }
 
@@ -264,10 +308,13 @@ nav ul li a {
   flex-direction: column;
   align-items: center;
   margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .about-image {
   margin-top: 2rem;
+  max-width:300px ;
+  max-height: 300px;
 }
 
 .about-image img {
@@ -282,11 +329,15 @@ nav ul li a {
 }
 
 .follow-me {
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.follow-me h3 {
+  margin-bottom: 1rem;
 }
 
 .follow-images {
@@ -331,7 +382,7 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   /* gap: 7rem; */
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .blog-header nav ul li {
@@ -352,6 +403,7 @@ nav ul li a {
   flex-direction: column;
 }
 .categories-menu ul {
+  font-size: 1.2rem;
   display: flex;
   gap: 1.5rem;
 }
@@ -382,9 +434,13 @@ nav ul li a {
 .food-category-post-text {
   margin-top: 1.5rem;
 }
+.food-category-image {
+  width: 80rem;
+  height: 300px;
+}
 
 .food-category-image img {
-  width: 250px;
+  width: 100%;
   height: 100%;
 }
 
@@ -419,7 +475,8 @@ nav ul li a {
 }
 
 .article-image {
-  /* width: 100%; */
+  width: 100%;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,6 +511,11 @@ nav ul li a {
   gap: 2rem;
 }
 
+.related-image {
+  width: 100%;
+  height: 200px;
+}
+
 .related-image img {
   width: 100%;
 }
@@ -471,6 +533,12 @@ nav ul li a {
 /* footer section   //////////////////////////////////////// */
 #main-footer {
   padding-top: 2rem;
+  text-align: center;
+}
+
+.back-up {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 .footer-container {
@@ -481,6 +549,10 @@ nav ul li a {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 2rem;
+}
+
+.footer-card-one {
+  text-align: center;
 }
 
 .footer-heading {
@@ -525,9 +597,9 @@ nav ul li a {
   .intro-text {
     margin: auto;
     width: 100vw;
-    padding-top: 5rem;
+    padding-top: 2rem;
     /* position:; */
-    bottom: 15%;
+    bottom: 19%;
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
@@ -562,11 +634,12 @@ nav ul li a {
     text-align: center;
   }
   .featured-image img {
-    width: 300px;
+    width: 100%;
+    height: 100%;
   }
 
   .featured-post {
-    max-width: 300px;
+    max-width: 350px;
     margin: auto;
     border: 0.5px solid black;
     display: flex;
@@ -588,7 +661,7 @@ nav ul li a {
   }
 
   .featured-sub-text p {
-    width: 290px;
+    width: 330px;
     padding: 0.3rem;
   }
 
@@ -641,6 +714,11 @@ nav ul li a {
     padding: 0.4rem;
   }
 
+  .recent-image {
+    width: 100%;
+    height: 300px;
+  }
+
   .recent-image img {
     width: 100%;
     height: 100%;
@@ -659,6 +737,12 @@ nav ul li a {
     margin-top: 4rem;
     margin-left: 0rem;
     margin-bottom: 4rem;
+  }
+
+  .about-image {
+    margin-top: 2rem;
+    width:300px ;
+    height: 250px;
   }
 
   /* footer section   //////////////////////////////////////// */
@@ -872,6 +956,12 @@ nav ul li a {
     padding-right: 0.7rem;
   }
 
+  .food-category-image {
+    width: 100%;
+    height: 300px;
+  }
+  
+
   .food-category-image img {
     width: 100%;
     height: 100%;
@@ -895,6 +985,10 @@ nav ul li a {
     border: 1px solid black;
     margin-top: 4rem;
     padding: 1rem;
+  }
+
+  .article-image {
+    height: 500px;
   }
 
   /* related post section ////////////////////////////////// */
